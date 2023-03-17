@@ -13,7 +13,6 @@ int sum(int n, int a[]){
 	}
 
 }
-
 int main(){
 int n;
 cin>>n;
