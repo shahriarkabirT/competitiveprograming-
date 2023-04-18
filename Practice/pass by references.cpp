@@ -25,7 +25,6 @@ int main() {
 
 int arr[2];
 func(arr);
-
 for(int i = 0 ; i<2; i++){
 	cout<<arr[i]<< " ";
 }
