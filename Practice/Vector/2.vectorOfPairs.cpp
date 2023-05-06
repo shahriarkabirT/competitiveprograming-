@@ -20,6 +20,7 @@ int main(){
         v.push_back({x,y});
     }
     printVec(v);
+    
 }
   
 

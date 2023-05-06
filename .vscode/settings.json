@@ -37,6 +37,7 @@
   "files.associations": {
     "iosfwd": "cpp",
     "string": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "vector": "cpp"
   }
 }
