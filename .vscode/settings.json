@@ -39,5 +39,6 @@
     "string": "cpp",
     "filesystem": "cpp",
     "vector": "cpp"
-  }
+  },
+  "C_Cpp_Runner.showCompilationTime": false
 }
