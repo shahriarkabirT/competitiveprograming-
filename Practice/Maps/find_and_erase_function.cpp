@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+ #include <bits/stdc++.h>
 using namespace std;
 
 void print (map <int,string> &m){
@@ -15,6 +15,17 @@ int main() {
 	m[1] = "abc";
 	m[5] = "cdc";
 	m[3] = "adc";
-	print(m);
-   
+
+	auto it = m.find(3);
+	m.erase(5);
+	if(it == m.end()){
+		cout<<"NO value availble";
+	}
+	else{
+		cout<<(*it).first << " " <<(*it).second;
+	}
+   	print(m);
+
+
+ //   m.clear();
 }
