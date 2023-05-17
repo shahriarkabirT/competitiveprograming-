@@ -19,5 +19,5 @@ int main() {
 	for(auto t : m){
 		cout<<t.first << " " << t.second<<endl;
 	}
-
+    
 }
