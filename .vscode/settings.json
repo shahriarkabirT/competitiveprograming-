@@ -38,7 +38,8 @@
     "iosfwd": "cpp",
     "string": "cpp",
     "filesystem": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "iostream": "cpp"
   },
   "C_Cpp_Runner.showCompilationTime": false
 }
