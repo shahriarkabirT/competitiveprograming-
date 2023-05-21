@@ -5,7 +5,7 @@ int main(){
 	// pair<int, char> g;
 	// g = {1, 'a'};
 
-	
+
 	// cin>>g.first;
 	// pair<int, char>	&h = g;
 
