@@ -9,8 +9,11 @@ int main() {
 	s.push(10);
 
 	while(!s.empty()){
+        
 		cout<< s.top() << endl ;
 		s.pop();
+
 	}
+
 }
 
