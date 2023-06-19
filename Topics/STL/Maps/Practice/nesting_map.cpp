@@ -1,5 +1,5 @@
 
-#include <bits/stdc++.h>
+#include < bits/stdc++.h >
 using namespace std;
 int main(){
 	map <pair<string , string >, vector<int> >m;
