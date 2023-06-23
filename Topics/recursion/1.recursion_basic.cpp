@@ -5,9 +5,6 @@ void f(int i,int n){
 	cout<<i << "  " ;
 	f(i+1,n);
 }
-
-
-
 int main(){
 	int n ;    
 	cin>>n;
