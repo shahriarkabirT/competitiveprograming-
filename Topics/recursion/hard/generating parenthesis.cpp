@@ -39,7 +39,7 @@ vector<string> getParenthesis(int n){
 
 int main(){
 
-
+    
     int n;
     cin>>n;
     vector<string>v;
