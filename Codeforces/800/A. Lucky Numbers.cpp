@@ -5,7 +5,7 @@ int main(){
     int t;
     
     cin>>t;
-
+    
     while(t--){
         int l,r;
         
@@ -14,8 +14,10 @@ int main(){
  for(int i = l ; i <=r ;i++){
 
     string numStr = to_string(i);
+
     string::iterator minDigit = min_element(numStr.begin(), numStr.end());
     string::iterator maxDigit = max_element(numStr.begin(), numStr.end());
+
     char min = *minDigit;
     char max = *maxDigit;
 
