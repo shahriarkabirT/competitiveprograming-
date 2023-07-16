@@ -16,7 +16,7 @@ int main(){
 		cout<<"Not found"<<endl;
 	}
 	else{
-		cout<<"Uower Bound: "<<*(it)<<endl;
+		cout<<"Upper Bound: "<<*(it)<<endl;
 	}
 	if(it == v.end()){
 		cout<<"Not found"<<endl;
