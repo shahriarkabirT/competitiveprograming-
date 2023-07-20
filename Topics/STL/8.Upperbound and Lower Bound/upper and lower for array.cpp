@@ -17,7 +17,7 @@ int main(){
 		
 	}
 	else{
-		cout<<"Uower Bound: "<<*(ptr)<<endl;
+		cout<<"Upper Bound: "<<*(ptr)<<endl;
 	}
 	if(ptr1 == a+n){
 		cout<<"Not found"<<endl;

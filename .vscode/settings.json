@@ -39,7 +39,8 @@
     "string": "cpp",
     "filesystem": "cpp",
     "vector": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "map": "cpp"
   },
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.msvcWarnings": [

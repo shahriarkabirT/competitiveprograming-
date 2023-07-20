@@ -17,4 +17,4 @@ cout<<m1<<" "<<m2<<" "<<m3;
 }
 
 
-//finding maximum values with O(N) complexity
+//finding maximum values with O(1) complexity
