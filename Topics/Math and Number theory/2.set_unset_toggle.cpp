@@ -19,10 +19,13 @@ int main(){
 
 	//bit set
 	showBinary(a | (1 << 3));
+
 	//bit unset
 	showBinary(a & (~(1 << 2)));
+
 	//bit toggle
 	showBinary( a ^ (1 << 1));
+	
 	//count set bit
 	cout<<__builtin_popcount(a)<<endl;
 	cout<<__builtin_popcountll(a)<<endl;
