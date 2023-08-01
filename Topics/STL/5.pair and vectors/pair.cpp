@@ -2,14 +2,12 @@
 using namespace std;
 
 int main(){
-	// pair<int, char> g;
-	// g = {1, 'a'};
+	pair<int, char> g;
+	g = {1, 'a'};
+	cin>>g.first;
+	pair<int, char>	&h = g;
 
-
-	// cin>>g.first;
-	// pair<int, char>	&h = g;
-
-	// cout<<g.first<<endl<<h.second;
+	cout<<g.first<<endl<<h.second;
 
 	pair<int,int> arr[3];
 
