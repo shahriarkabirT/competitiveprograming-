@@ -35,8 +35,8 @@ void solve(){
 	int p1,p2;
 	for(int i = 0 ; i < n ; i++){
 		for(int j =  i+1 ; j < n ; j++){
-			int intesect = masks[i] & masks[j];
-			common_days = __builtin_popcount(intesect);
+			int intersect = masks[i] & masks[j];
+			common_days = __builtin_popcount(intersect);
 			if(common_days > max_days){
 				max_days = common_days;
 				p1 = i;
