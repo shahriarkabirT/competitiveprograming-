@@ -11,6 +11,24 @@ vector<int>prime_factors(int n){
 	if(n>1) v.push_back(n);
 	return v;
 }
+/*logic
+   32
+   1 * 32
+   2 * 16 
+   4 * 8
+
+   32/2
+   16/2
+   8/2
+   4/2
+   2/2
+   1 = false , return 2 2 2 2 2
+*/
+
+
+
+
+
 int main(){
 		int t;
 		cin>>t;
