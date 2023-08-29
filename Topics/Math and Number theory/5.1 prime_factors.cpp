@@ -25,10 +25,6 @@ vector<int>prime_factors(int n){
    1 = false , return 2 2 2 2 2
 */
 
-
-
-
-
 int main(){
 		int t;
 		cin>>t;
