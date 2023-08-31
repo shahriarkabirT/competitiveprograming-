@@ -24,3 +24,26 @@ M = 5 (A and M must be co prime)
 
 */
 
+#include<bits/stdc++.h>
+using namespace std;
+
+const int M = 1e9 + 7;
+
+int EularbinExp(int  a , int b , int m){
+	int ans = 1;
+		while(b > 0){
+			if(b&1) ans = (ans * 1LL * a) % m;
+
+			a = (a * 1LL * a) % m;
+
+			b = b >> 1;
+		}
+	return ans;
+}
+
+int main(){
+
+		cout<<EularbinExp(2, M-2, M);
+	}
+
+
