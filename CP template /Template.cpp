@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#define ll long long 
 using namespace std;
 const int M = 1e9 + 7;
 const long long M2 = 1e18 + 7;
@@ -25,7 +26,7 @@ int gcd(int a , int b){
 
     if( b == 0 ) return a;
 
-    return (b , a%b);
+    return gcd(b , a%b);
 }
 int lcm(int a , int b){
 	
@@ -45,6 +46,19 @@ vector<vector<int>>subsets(vector<int> &nums){
 	}
 	return subsets;
 }
+
+bool is_prime(int n){
+	if (n <= 1)
+        return false;
+
+	for(int i = 2 ; i * i <= n ; i++){
+		
+		if(n%i == 0){
+			return false;
+		}
+	}
+	return true;
+}
 int binExpRecur(int a , int b){
 	if(b == 0 ) return 1 ;
 	int res = binExpRecur(a , b/2);
@@ -60,7 +74,7 @@ int binExp(int a , int b){
 		while(b > 0){
 			if(b&1) ans = (ans * 1LL * a)%M;
 
-			a = (a * 1LL * a)%M;
+			a = (a * 1LL * a) % M;
 
 			b = b >> 1;
 		}
@@ -86,14 +100,69 @@ long long binExpLrg(long long a , long long b){
 		}
 	return ans;
 }
+long long EularbinExp(int  a , int b , int m){
+	int ans = 1;
+		while(b > 0){
+			if(b&1) ans = (ans * 1LL * a) % m;
+
+			a = (a * 1LL * a) % m;
+
+			b = b >> 1;
+		}
+	return ans;
+}
+int superPow(int a, vector<int>& b) {
+		int number = 0 ;
+		for(auto &i : b){
+			number = (number * 10 + i ) % 1140 ; 
+		}
+		return EularbinExp(a,number,1337);
+		//return number;
+}
+vector<int>prime_factors(int n){
+	vector<int> v;
+	for(int i = 2 ; i * i <= n ; i++){
+		while(n%i==0){
+			v.push_back(i);
+			n = n/i;
+		}
+	}
+	if(n>1) v.push_back(n);
+	return v;
+}
+void printDivisors(int a){
+	for(int i = 1 ; i * i <= a ; i++){
+		if(a%i == 0){
+			cout<< i << " " << a/i <<endl;
+		}
+	}
+}
+
+
+/*
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+*/
+
+void check(){
+
+}
 
 void solve(){
-
-
+	
 	}
 
-int main() {
-		
+int main(){
+		int t;
+		cin>>t;
+		while(t--){
 			solve();
+			}
+		
 			
 }
