@@ -1,3 +1,5 @@
+//https://www.hackerearth.com/problem/algorithm/monk-and-divisor-conundrum-56e0eb99/
+
 #include <bits/stdc++.h>
 using namespace std;
 
