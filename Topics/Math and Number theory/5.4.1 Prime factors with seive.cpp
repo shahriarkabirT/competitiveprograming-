@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 1e7 + 10;
-
 vector<bool> is_prime(N,1);
 vector<int> lp(N,0) , hp(N,0);
 
@@ -24,9 +23,6 @@ int main(){
 
 	int num;
 	cin>>num;
-
-
-
 
 	vector<int>prime_factors;
 		while(num > 1){
