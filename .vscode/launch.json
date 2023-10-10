@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/shahriarkabir/Development files/competitive program /cp",
-      "program": "/Users/shahriarkabir/Development files/competitive program /cp/build/Debug/outDebug"
+      "cwd": ".",
+      "program": "build/Debug/outDebug"
     }
   ]
 }
