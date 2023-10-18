@@ -34,51 +34,55 @@ typedef double                    db;
 
 //--------------------------------------------------------------------------//
 //--------------------------------------------------------------------------//
+const int N = 1e5 + 7; 
 
-bool is_sorted(int a[] , int n){
-    int f = 0;
-    loop{
-        if(a[i] != i+1){
-            f = 1;
-            break;
-        } 
-    }
-    if(f ==1) return false;
-    else return true;
-}
+int hsh[N];
+int hs[N];
+
 void solve(){
-    int n;
-    in n;
-    int a[n];
-    int max = 0;
-    
-	loop{
-        int x;
-        in x;
-        a[i] = x;
-        if(max <= x) max = x;
+	int n;
+    cin>>n;
+    int arr[n+1];
+    int max = 0 ;
+    for(int i = 1 ; i <= n; i++){
+        in arr[i];
+        int x = arr[i];
+        if(x >= max) max = x;
+        hsh[x]++;
     }
-    if(is_sorted(a,n)){
-        cout<<0<<endl;
+
+    int flag = 1;
+    for(int i = 1; i < max; i++){
+
+        if(hsh[i] < hsh[i+1] || hsh[i] == 0){
+            flag = 0;
+            break;
+        }
+    }
+    if(flag == 0){
+        cout<<-1<<endl;
     }
     else{
-        if(a[0] == max && a[n-1] == 1 ){
-            out 3 nl;
-        }
-        else if(a[n-1] == max || a[0] == 1){
-            out 1 nl;
-        } 
-        else{
-            out 2 nl;
+        cout<<hsh[1]<<endl;
+        for(int i = 1; i <= n ; i++){
+            int x = arr[i];
+            if(hs[x] == 0){
+                out 1 spc ;
+                hs[x]++;
+            }
+            else{
+                out hs[x]+1 spc;
+                hs[x]++;
+            }
         }
     }
 }
 int main(){
-    //in_out
+   // in_out
 	faster
 
 
-	tc solve();
-
+	//tc solve();
+    solve();
 }	
 
