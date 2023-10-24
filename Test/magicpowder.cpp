@@ -24,7 +24,6 @@ typedef double                    db;
 #define gcd(a,b)        __gcd(a,b)
 #define in_out          freopen("input.txt","r",stdin); freopen("output.txt","w",stdout);
 #define spc             <<" "
-#define int long long
 //--------------------------------------------------------------------------//
 
 
@@ -72,12 +71,12 @@ void solve(){
 	}
 
 	int lo = 0; 
-	int hi = 1e9;
-	
+	int hi = 1e3;
+	int mid;
 
 	while(lo<=hi){
 
-		int mid = (hi + lo)/2;
+		mid = (hi - lo)/2;
 		
 
 		if(chk(mid , a , b , k) == true){
@@ -88,7 +87,7 @@ void solve(){
 		}
 	}
 
-	cout<<lo - 1<<endl;	
+	cout<<lo-1<<endl;	
 
 
 
@@ -98,12 +97,12 @@ void solve(){
 
 }
 
-signed main(){
+int main(){
     in_out
 	faster
 
 	
-	  solve();
+	solve();
 
 
 }
