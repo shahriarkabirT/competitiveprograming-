@@ -3,7 +3,13 @@ using namespace std;
 void printDivisors(int a){
 	for(int i = 1 ; i * i <= a ; i++){
 		if(a%i==0){
-			cout<< i << " " << a/i <<endl;
+			if(a%i == i){
+				cout<<i<<endl;
+			}
+			else{
+				cout<< i << " " << a/i <<endl;
+			}
+			
 		}
 	}
 }
