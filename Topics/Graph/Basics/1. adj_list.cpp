@@ -19,11 +19,11 @@ void solve(){
 
 	}
 	for(int i =  0 ; i < edge ; i++){
-		cou t<<i<<" ";
+		cout<<i<<" ";
 		for(auto it : graph[i]){
 			cout<<it<<" ";
 		}
-		cout<<endl;
+		cout<<endl; 	
 	}
 }
 int main(){
