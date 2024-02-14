@@ -27,12 +27,12 @@ int main()
     cin>>n;
     int ar[n+3];
     for(int i=0;i<n;i++)cin>>ar[i];
-
+    
     cin>>m;
     int br[m+3];
     for(int i=0;i<m;i++)cin>>br[i];
 
     cin>>x;
 
-    solve(ar,br,n,m,x);
+    solve(ar,br,n   ,m,x);
 }
