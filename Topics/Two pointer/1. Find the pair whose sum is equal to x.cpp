@@ -1,4 +1,6 @@
- #include<bits/stdc++.h>
+//1. Find the pair whose sum is equal to x
+
+#include<bits/stdc++.h>
 using  namespace  std;
 int val1,val2;
 bool solve(int ar[],int x,int n)

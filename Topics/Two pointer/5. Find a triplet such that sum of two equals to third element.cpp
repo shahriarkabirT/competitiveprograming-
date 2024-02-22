@@ -1,3 +1,4 @@
+// 5. Find a triplet such that sum of two equals to third element
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -42,6 +43,7 @@ void solve(){
 				cout<<a[j] spc a[k] spc a[i] nl;
 				break;
 			}
+
 
 			if(a[j] + a[k] > a[i]){
 				k--;
