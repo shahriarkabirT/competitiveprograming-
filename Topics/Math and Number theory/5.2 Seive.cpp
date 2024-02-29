@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-const int N = 1e7 + 10;
+const int N = 1e9 + 10;
 vector<bool> is_prime(N,1);
 
 int main(){
