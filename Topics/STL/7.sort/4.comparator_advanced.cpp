@@ -2,7 +2,7 @@
 using namespace std;
 bool should_i_swap(pair<int,int>a, pair<int,int> b){
 	if(a.first != b.first) {
-		if(a.first<b.first) return true;
+		if(a.first < b.first) return true;
 		return false;
 	}
 	else{
